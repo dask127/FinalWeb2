@@ -1,0 +1,24 @@
+Ante la gran demanda de pasajes, la empresa quiere brindar una mejor experiencia a sus clientes por lo que están empezando a pensar en un panel de gestión para clientes donde podrán gestionar sus viajes.
+Para ello, presentaron los siguientes requerimientos:
+Como usuario quiero poder ver la lista de pasajes comprados.
+Como usuario quiero poder cancelar un pasaje.
+Como usuario quiero poder generar calificaciones sobre los viajes realizados. Una calificación es un número del 1 al 10 + un texto breve.
+ 
+Describa los cambios necesarios para llevar a cabo las solicitudes anteriores, desde el punto de vista:
+- Modelo de Base de Datos
+- MVC
+
+
+Para llevar a cabo estos cambios, primero se necesitaria modificar el "htaccess." para permitir el acceso a la api.
+Luego, se deberia implementar un router para manejar las solicitudes a la api, y de ahi se deberia crear una "vista"
+para mandar los datos requeridos de la api, un controlador de esta misma y los modelos pueden ser reutilizables respecto
+a los ya implementados para la página (Si se quiere añadir un sistema de usuarios, se deberá crear un nuevo modelo para
+estos mismos).
+
+1*: Redirecciona las llamadas a la API.
+
+2*: es toda la logica.
+
+3*: donde se van a retornar los datos de la API.
+
+4*: un nuevo modelo si se quieren implementar usuarios al sistema.

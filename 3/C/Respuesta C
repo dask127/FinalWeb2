@@ -1,0 +1,33 @@
+¿Qué otros servicios web podría ofrecer la plataforma?
+¿Por qué y para quien considera que pueden ser útiles?
+Defina al menos dos, pensando a qué tipo de usuario puede servir, de ejemplos de uso y escriba los endpoints para accederlos
+
+
+Servicio de trackeo de rutas.
+
+Podria ofrecer el servicio de mostrar las rutas disponibles en tiempo real de colectivos, ya que no se tiene claro
+cuales rutas se tienen disponibles y cuales no debido al COVID, y mostar su precio.
+
+Podrian ser util para aquellos que viajan por trabajo o de vacaciones.
+Le puede servir al usuario promedio.
+
+/api/ruta/                  para conseguir todas las rutas.
+/api/ruta/balcarce          para obtener las rutas desde y hasta balcarce, y si estan disponibles 
+/api/ruta/{id de la ruta}   para saber el estado de la ruta (disponible o no)
+
+
+
+
+Servicio de encomiendas avanzado.
+
+Podria ofrecer el servicio de mandar y trackear encomiendas en todas las rutas disponibles, esto permitiria
+saber donde, y cuando estan las encomiendas.
+
+Podria ser útil para locales o negocios que necesitan mandar items,
+o al usuario promedio que necesita mandar algo.
+
+
+/api/encomienda                                para consultar el estado de todas las encomiendas del usuario
+/api/encomienda/{id de encomienda}             para consultar el estado de una encomienda especifica
+/api/encomienda/ruta                           para obtener la ruta por la que va el paquete.
+

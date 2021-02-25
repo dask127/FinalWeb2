@@ -1,0 +1,10 @@
+Viaje(id: int, nro_viaje: varchar, día: date, hora: time, empresa: varchar: int; id_ciudad_origen: int, id_ciudad_destino: int) 
+Ciudad(id: int, nombre: varchar, aspo: boolean)
+Y una tabla adicional para almacenar la venta de pasajes:
+Pasaje(id: int, dni: varchar, cantidad: int, cancelado: boolean, id_viaje: int)
+
+Implemente el siguiente requerimiento siguiendo el patrón MVC. No es necesario realizar las vistas, solo controlador(es), modelo(s) y las invocaciones a la vista. 
+ALTERNATIVA A
+Generar una tabla resumen de pasajes vendidos por viaje
+Se debe mostrar una lista de los viajes, indicando el total de pasajes vendidos y el detalle de los pasajes.
+Si el viaje no tiene pasajes vendidos, no debe mostrarse en la lista.

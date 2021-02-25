@@ -1,0 +1,12 @@
+Viaje(id: int, nro_viaje: varchar, día: date, hora: time, empresa: varchar: int; id_ciudad_origen: int, id_ciudad_destino: int) 
+Ciudad(id: int, nombre: varchar, aspo: boolean)
+Y una tabla adicional para almacenar la venta de pasajes:
+Pasaje(id: int, dni: varchar, cantidad: int, cancelado: boolean, id_viaje: int)
+
+Implemente el siguiente requerimiento siguiendo el patrón MVC. No es necesario realizar las vistas, solo controlador(es), modelo(s) y las invocaciones a la vista. 
+Eliminar un VIAJE del sistema
+Se debe poder eliminar un viaje del sistema cumpliendo los siguientes requerimientos. Informar los errores correspondientes en caso de no cumplirlos.
+Controlar posibles errores de carga de datos.
+Verificar que el usuario esté logueado y sea administrador
+Verificar que exista el viaje a eliminar
+Si el viaje se pudo eliminar, se deben marcar como cancelado todos los pasajes vendidos para ese viaje.
